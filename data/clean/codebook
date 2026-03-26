@@ -1,0 +1,19 @@
+# Codebook for Clean Dataset
+
+## Variables
+
+- month  
+  Format YYYY-MM. Represents each month in the dataset.
+
+- petrol_price  
+  Monthly average petrol price in AUD per litre.  
+  Source: FuelIO (manually extracted).
+
+- patronage_total  
+  Total monthly public transport usage (train + tram + bus).  
+  Source: Transport Patronage | vic.gov.au.
+
+## Notes
+- All dates converted to YYYY-MM format.
+- Missing values checked and handled during cleaning.
+- Dataset is ready for regression analysis.
