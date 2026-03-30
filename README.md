@@ -58,7 +58,7 @@ Place the following files inside data/raw/:
 - petrol_prices_raw.csv
 - vic_transport_patronage_raw.csv
 
--!!-  see data/README.data for download instructions.!!
+-!!-  SEE data/README.data for download instructions.!!
 
 -4 - Run the cleaning script.
 From the project root directory (ECC3479-PROJECT), run:
