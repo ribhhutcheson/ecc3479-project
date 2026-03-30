@@ -1,6 +1,10 @@
 # ecc3479-project
 Emperical Project for ECC3479
 
+What is the effect of changes in the average monthly petrol price on monthly public transport ridership for commuters in Melbourne between 2022 and 2025, compared with months where petrol prices remain stable? 
+
+This project constructs a reproducible monthly dataset for metropolitan Melbourne combining petrol prices and public transport patronage. Rainfall, population and public holiday data is collected as potential control variables. All raw data is cleaned, transformed and merged in a single python script. 
+
 Repository Structure
 ECC3479-PROJECT/
 │
