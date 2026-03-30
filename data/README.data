@@ -4,11 +4,24 @@ This folder contains the raw data used in the project.
 
 1. petrol_prices_raw.csv  
    - Source: FuelIO (Melbourne fuel price history)
+   - Coverage: January 2022- March 2026
+   - Geographic Coverage: Melbourne
+   - Variable: Average petrol price
+   - Unit: Cents per litre
+   - Fuel type: Unleaded 
+   - Date accessed: 23/3/26
    - Method: Monthly average petrol prices manually extracted from the FuelIO app.
    - Reason: FuelIO does not provide a downloadable dataset, so manual extraction was required.
+   - Limitation: 
 
 2. vic_transport_patronage_raw.xlsx  
    - Source: Transport Patronage | vic.gov.au
+   - Source link:
+   - Coverage: January 2018- January 2026
+   - Georgaphic Coverage: Melbourne Metropolitan 
+   - Variables: Year, Month, Metropolitan Train, Metropolitan Tram, Metropolitan Bus, Regional Train, Regional Coach, Regional Bus.
+   - File format: csv
+   - Date accessed: 23/3/26
    - Contains monthly public transport usage for trains, trams, and buses.
    - Downloaded directly from the Victorian Government website.
 
