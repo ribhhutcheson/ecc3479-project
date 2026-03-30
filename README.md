@@ -132,7 +132,7 @@ Final merged dataset created successfully.
 
 This confirms that the entire workflow has executed correctly and that the repository is fully reproducible.
 
-- 5 Review the cleaned dataset.
+-5 Review the cleaned dataset.
 Open:
 data/clean/merged_final.csv
 - A full description of variables is provided in:
