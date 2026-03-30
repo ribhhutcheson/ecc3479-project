@@ -52,7 +52,7 @@ pip install pandas
 
 Clone or download the repository
 git clone <https://github.com/ribhhutcheson/ecc3479-project.git>
-cd ECC3479-PROJECT
+cd ecc3479-project
 
 -3  Ensure raw data is in the correct folder
 Place the following files inside data/raw/:
