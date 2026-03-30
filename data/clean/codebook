@@ -7,7 +7,6 @@ month
 - Represents the first day of each month (used as a monthly time index).
 - Created by converting all date sources into a standard monthly timestamp.
 
-
 petrol_price
 - Monthly average petrol price in AUD per litre.
 - Source: FuelIO (manually extracted).
@@ -19,6 +18,7 @@ petrol_price
 -rainfall_mm
 - Total monthly rainfall in millimetres for Greater Melbourne.
 - Source: Melbourne Rainfall (BOM).
+
 -population
 - Estimated resident population for Victoria, interpolated to monthly frequency.
 - Source: ABS quarterly population change.
