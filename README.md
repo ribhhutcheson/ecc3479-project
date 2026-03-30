@@ -27,7 +27,6 @@ ECC3479-PROJECT/
 │       ├── rainfall_monthly.csv
 │       └── codebook/
 │
-├── output/
 │   
 │
 ├── README.data
