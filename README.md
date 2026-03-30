@@ -28,7 +28,7 @@ ECC3479-PROJECT/
 │       └── codebook/
 │
 ├── output/
-│   └── (plots, regression results)
+│   
 │
 ├── README.data
 └── README.md
