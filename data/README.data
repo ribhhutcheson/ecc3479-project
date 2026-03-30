@@ -25,4 +25,12 @@ This folder contains the raw data used in the project.
    - Contains monthly public transport usage for trains, trams, and buses.
    - Downloaded directly from the Victorian Government website.
 
+3. Monthly Public Holidays.csv
+   - Source: https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025
+   - Transcribed into an excel for appropriate years and converted into a csv. 
+   - Coverage: January 2022- December 2025
+   - Date accessed: 30/3/26
+   - Geographical location: Victoria
+   - Unit: Public holidays per month. 
+
 All raw data is stored exactly as obtained, with no cleaning or modification.
