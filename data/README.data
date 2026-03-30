@@ -25,12 +25,39 @@ This folder contains the raw data used in the project.
    - Contains monthly public transport usage for trains, trams, and buses.
    - Downloaded directly from the Victorian Government website.
 
-3. Monthly Public Holidays.csv
+3. monthly_public_holidays.csv
    - Source: https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025
    - Transcribed into an excel for appropriate years and converted into a csv. 
    - Coverage: January 2022- December 2025
    - Date accessed: 30/3/26
    - Geographical location: Victoria
    - Unit: Public holidays per month. 
+
+4. melbourne_rainfall_raw.csv
+- Source: Bureau of Meteorology (BoM) – Monthly Rainfall (Station 086338, Melbourne Olympic Park)
+- Source link: https://reg.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=139&p_display_type=dataFile&p_stn_num=086338
+- Coverage: 2013–2026
+- Geographic Coverage: Melbourne, Victoria
+- Variables: Year, Jan–Dec monthly rainfall (mm), Annual rainfall (mm)
+- File format: csv
+- Date accessed: 30/3/26
+- Contains monthly rainfall totals derived from daily observations.
+- Downloaded directly from the BoM Climate Data Online portal.
+
+5. melbourne_population_change.csv
+population_quarterly_raw.csv
+- Source: Australian Bureau of Statistics (ABS) – National, state and territory population
+- Source link: https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population
+- Coverage: Quarterly, 2021–2025
+- Geographic Coverage: Victoria
+- Variables: Quarter, Total population change, Natural increase, Net overseas migration
+- File format: csv
+- Date accessed: 30/3/26
+- Notes:
+    • ABS only publishes population estimates on a quarterly basis.
+    • Monthly population data does not exist for Australia.
+    • This dataset is therefore included in quarterly form as raw data.
+    • In the cleaning script, quarterly values are converted to monthly using standard step interpolation (repeating the quarterly value for each month in the quarter) so that the final merged dataset is monthly.
+- Downloaded directly from the ABS website.
 
 All raw data is stored exactly as obtained, with no cleaning or modification.

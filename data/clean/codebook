@@ -2,16 +2,34 @@
 
 ## Variables
 
-- month  
-  Format YYYY-MM. Represents each month in the dataset.
+month
+- Format: YYYY-MM
+- Represents the first day of each month (used as a monthly time index).
+- Created by converting all date sources into a standard monthly timestamp.
 
-- petrol_price  
-  Monthly average petrol price in AUD per litre.  
-  Source: FuelIO (manually extracted).
+
+petrol_price
+- Monthly average petrol price in AUD per litre.
+- Source: FuelIO (manually extracted).
 
 - patronage_total  
   Total monthly public transport usage (train + tram + bus).  
   Source: Transport Patronage | vic.gov.au.
+
+-rainfall_mm
+- Total monthly rainfall in millimetres for Greater Melbourne.
+- Source: Melbourne Rainfall (BOM).
+-population
+- Estimated resident population for Victoria, interpolated to monthly frequency.
+- Source: ABS quarterly population change.
+- Constructed by:
+- reading quarterly population change
+- cumulatively summing changes from Jun‑2021 ERP baseline
+- expanding each quarter’s population level across its three months.
+
+public_holiday_count
+- Number of Victorian public holidays occurring in each month.
+- Source: VIC Government public holiday calendar.
 
 ## Notes
 - All dates converted to YYYY-MM format.
