@@ -43,7 +43,7 @@ Folder meanings
 
 Getting Started
 
--1 Create and activate a Python environment.
+-1 Create and activate a Python environment. (Python 3.9 or later)
 You may use venv, conda, or any environment tool.
 
 -2 Install required packages.
