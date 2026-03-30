@@ -47,7 +47,7 @@ This project only requires pandas:
 pip install pandas
 
 Clone or download the repository
-git clone <your-repo-url>
+git clone <https://github.com/ribhhutcheson/ecc3479-project.git>
 cd ECC3479-PROJECT
 
 -3  Ensure raw data is in the correct folder

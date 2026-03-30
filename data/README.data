@@ -16,7 +16,7 @@ This folder contains the raw data used in the project.
 
 2. vic_transport_patronage_raw.xlsx  
    - Source: Transport Patronage | vic.gov.au
-   - Source link:
+   - Source link:https://discover.data.vic.gov.au/dataset/monthly-public-transport-patronage-by-mode
    - Coverage: January 2018- January 2026
    - Georgaphic Coverage: Melbourne Metropolitan 
    - Variables: Year, Month, Metropolitan Train, Metropolitan Tram, Metropolitan Bus, Regional Train, Regional Coach, Regional Bus.
@@ -32,6 +32,8 @@ This folder contains the raw data used in the project.
    - Date accessed: 30/3/26
    - Geographical location: Victoria
    - Unit: Public holidays per month. 
+   - Method: Holidays per month manually extracted
+   - Reason: vic.gov does not provide a downloadable dataset, so manual extraction was required.
 
 4. melbourne_rainfall_raw.csv
 - Source: Bureau of Meteorology (BoM) – Monthly Rainfall (Station 086338, Melbourne Olympic Park)
