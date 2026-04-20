@@ -1,6 +1,10 @@
 # ecc3479-project
 Emperical Project for ECC3479
 
+What is the effect of changes in the average monthly petrol price on monthly public transport ridership for commuters in Melbourne between 2022 and 2025, compared with months where petrol prices remain stable? 
+
+This project constructs a reproducible monthly dataset for metropolitan Melbourne combining petrol prices and public transport patronage. Rainfall, population and public holiday data is collected as potential control variables. All raw data is cleaned, transformed and merged in a single python script. 
+
 Repository Structure
 ECC3479-PROJECT/
 │
@@ -23,8 +27,7 @@ ECC3479-PROJECT/
 │       ├── rainfall_monthly.csv
 │       └── codebook/
 │
-├── output/
-│   └── (plots, regression results)
+│   
 │
 ├── README.data
 └── README.md
@@ -39,7 +42,7 @@ Folder meanings
 
 Getting Started
 
--1 Create and activate a Python environment.
+-1 Create and activate a Python environment. (Python 3.9 or later)
 You may use venv, conda, or any environment tool.
 
 -2 Install required packages.
@@ -47,8 +50,8 @@ This project only requires pandas:
 pip install pandas
 
 Clone or download the repository
-git clone <your-repo-url>
-cd ECC3479-PROJECT
+git clone <https://github.com/ribhhutcheson/ecc3479-project.git>
+cd ecc3479-project
 
 -3  Ensure raw data is in the correct folder
 Place the following files inside data/raw/:
@@ -58,7 +61,7 @@ Place the following files inside data/raw/:
 - petrol_prices_raw.csv
 - vic_transport_patronage_raw.csv
 
--!!-  see data/README.data for download instructions.!!
+-!!-  SEE data/README.data for download instructions.!!
 
 -4 - Run the cleaning script.
 From the project root directory (ECC3479-PROJECT), run:
@@ -132,7 +135,7 @@ Final merged dataset created successfully.
 
 This confirms that the entire workflow has executed correctly and that the repository is fully reproducible.
 
-- 5 Review the cleaned dataset.
+-5 Review the cleaned dataset.
 Open:
 data/clean/merged_final.csv
 - A full description of variables is provided in:

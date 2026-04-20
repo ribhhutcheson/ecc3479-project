@@ -12,11 +12,11 @@ This folder contains the raw data used in the project.
    - Date accessed: 23/3/26
    - Method: Monthly average petrol prices manually extracted from the FuelIO app.
    - Reason: FuelIO does not provide a downloadable dataset, so manual extraction was required.
-   - Limitation: 
+   
 
-2. vic_transport_patronage_raw.xlsx  
+2. vic_transport_patronage_raw.csv 
    - Source: Transport Patronage | vic.gov.au
-   - Source link:
+   - Source link:https://discover.data.vic.gov.au/dataset/monthly-public-transport-patronage-by-mode
    - Coverage: January 2018- January 2026
    - Georgaphic Coverage: Melbourne Metropolitan 
    - Variables: Year, Month, Metropolitan Train, Metropolitan Tram, Metropolitan Bus, Regional Train, Regional Coach, Regional Bus.
@@ -32,6 +32,8 @@ This folder contains the raw data used in the project.
    - Date accessed: 30/3/26
    - Geographical location: Victoria
    - Unit: Public holidays per month. 
+   - Method: Holidays per month manually extracted
+   - Reason: vic.gov does not provide a downloadable dataset, so manual extraction was required.
 
 4. melbourne_rainfall_raw.csv
 - Source: Bureau of Meteorology (BoM) – Monthly Rainfall (Station 086338, Melbourne Olympic Park)
@@ -57,7 +59,7 @@ population_quarterly_raw.csv
     • ABS only publishes population estimates on a quarterly basis.
     • Monthly population data does not exist for Australia.
     • This dataset is therefore included in quarterly form as raw data.
-    • In the cleaning script, quarterly values are converted to monthly using standard step interpolation (repeating the quarterly value for each month in the quarter) so that the final merged dataset is monthly.
+    • In the cleaning script, quarterly values are converted to monthly (repeating the quarterly value for each month in the quarter) so that the final merged dataset is monthly.
 - Downloaded directly from the ABS website.
 
 All raw data is stored exactly as obtained, with no cleaning or modification.

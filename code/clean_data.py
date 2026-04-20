@@ -30,6 +30,7 @@ rain_long["month"] = pd.to_datetime(
 rain_clean = rain_long[rain_long["month"] >= "2022-01"]
 rain_clean = rain_clean.sort_values("month")
 rain_clean = rain_clean[["month", "rainfall_mm"]]
+rain_clean["month"] = rain_clean["month"].dt.strftime("%Y-%m")
 
 rain_clean.to_csv("data/clean/rainfall_monthly.csv", index=False)
 
@@ -68,8 +69,8 @@ pop = pd.DataFrame(clean_rows, columns=[
 print("POP COLUMNS:", pop.columns.tolist())
 print(pop.head())
 
-# Convert quarter to datetime
-pop["quarter"] = pd.to_datetime(pop["Quarter"], format="%b-%y")
+# Convert quarter to datetime, anchoring on the quarter end month
+pop["quarter"] = pd.to_datetime(pop["Quarter"], format="%b-%y") + pd.offsets.MonthEnd(0)
 
 # Convert numeric columns (remove commas)
 pop["Total growth"] = pop["Total growth"].str.replace(",", "").astype(int)
@@ -83,7 +84,7 @@ pop = pop.sort_values("quarter")
 starting_population = 6680648  # Victoria ERP Jun-21
 pop["population_level"] = starting_population + pop["Total growth"].cumsum()
 
-# Expand quarterly → monthly
+# Expand quarterly → monthly (three months per quarter)
 pop_months = []
 for _, row in pop.iterrows():
     q_end = row["quarter"]
@@ -95,6 +96,7 @@ pop_monthly = pd.DataFrame(pop_months)
 
 # Filter to 2022 onwards
 pop_monthly = pop_monthly[pop_monthly["month"] >= "2022-01"]
+pop_monthly["month"] = pop_monthly["month"].dt.strftime("%Y-%m")
 
 # Save cleaned population
 pop_monthly.to_csv("data/clean/population_monthly.csv", index=False)
@@ -117,6 +119,7 @@ hol = hol.rename(columns={"amount of public holidays": "public_holiday_count"})
 
 # Keep only needed columns
 hol_monthly = hol[["month", "public_holiday_count"]]
+hol_monthly["month"] = hol_monthly["month"].dt.strftime("%Y-%m")
 
 # Save cleaned file
 hol_monthly.to_csv("data/clean/public_holidays_monthly.csv", index=False)
@@ -196,6 +199,7 @@ final = final.merge(hol_monthly, on="month", how="left")
 
 # Sort by month for readability
 final = final.sort_values("month")
+final["month"] = final["month"].dt.strftime("%Y-%m")
 
 # Save final dataset
 final.to_csv("data/clean/merged_final.csv", index=False)
