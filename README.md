@@ -31,6 +31,10 @@ ECC3479-PROJECT/
 │
 ├── README.data
 │
+├── output/
+│    └── regression_table.csv
+│
+│  
 ├── analysis.ipynb
 │
 ├── EDA.ipynb
