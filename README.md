@@ -30,6 +30,10 @@ ECC3479-PROJECT/
 │   
 │
 ├── README.data
+│
+├── analysis.ipynb
+│
+├── EDA.ipynb
 └── README.md
 
 Folder meanings
@@ -142,6 +146,31 @@ data/clean/merged_final.csv
 data/clean/codebook/codebook.md
 
 
+## Analysis
 
+The primary analysis file is:
+analysis.ipynb
+
+This notebook runs end-to-end on the cleaned data and includes:
+- Declaration of descriptive ambition
+- Econometric specification and justification
+- OLS regression with three specifications
+- Formatted regression table
+- Interpretation of main coefficients
+- Threats and limitations
+
+To run the analysis:
+1. Ensure you have completed the data cleaning pipeline (steps 1-4 above)
+2. Install additional required packages:
+   pip install statsmodels jupyter
+3. Launch Jupyter Notebook:
+   jupyter notebook
+4. Open analysis.ipynb and run all cells (Kernel → Restart & Run All)
+
+The notebook reads from:
+   data/clean/merged_final.csv
+
+And saves regression outputs to:
+   output/regression_table.csv
 
 
