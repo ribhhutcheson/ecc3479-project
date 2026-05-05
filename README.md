@@ -149,7 +149,7 @@ data/clean/merged_final.csv
 - A full description of variables is provided in:
 data/clean/codebook/codebook.md
 
-### Run the EDA
+-6 Run the EDA
 Launch Jupyter Notebook:
 jupyter notebook
 
@@ -159,7 +159,7 @@ This notebook explores variable distributions, time series trends,
 seasonality, and relationships between variables.
 
 
-## Analysis
+-7 Analysis
 
 The primary analysis file is:
 analysis.ipynb
@@ -167,14 +167,16 @@ analysis.ipynb
 This notebook runs end-to-end on the cleaned data and includes:
 - Declaration of descriptive ambition
 - Econometric specification and justification
-- OLS regression with three specifications
+- OLS regression with four specifications- bivariate, controls, 
+  controls + seasonal FE, log-linear
 - Formatted regression table
 - Interpretation of main coefficients
 - Assumptions
 - Threats and limitations
+- Conclusion and policy implications
 
 To run the analysis:
-1. Ensure you have completed the data cleaning pipeline (steps 1-4 above)
+1. Ensure you have completed the data cleaning pipeline (steps 1-5 above)
 2. Install additional required packages:
    pip install statsmodels jupyter
 3. Launch Jupyter Notebook:
