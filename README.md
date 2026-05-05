@@ -149,6 +149,15 @@ data/clean/merged_final.csv
 - A full description of variables is provided in:
 data/clean/codebook/codebook.md
 
+### Run the EDA
+Launch Jupyter Notebook:
+jupyter notebook
+
+Open EDA.ipynb and run all cells (Kernel → Restart & Run All)
+
+This notebook explores variable distributions, time series trends, 
+seasonality, and relationships between variables.
+
 
 ## Analysis
 
@@ -161,6 +170,7 @@ This notebook runs end-to-end on the cleaned data and includes:
 - OLS regression with three specifications
 - Formatted regression table
 - Interpretation of main coefficients
+- Assumptions
 - Threats and limitations
 
 To run the analysis:
