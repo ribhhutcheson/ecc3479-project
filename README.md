@@ -150,13 +150,22 @@ data/clean/merged_final.csv
 data/clean/codebook/codebook.md
 
 -6 Run the EDA
-Launch Jupyter Notebook:
-jupyter notebook
+If you do not already have Jupyter installed, run:
+    pip install jupyter
+
+Launch Jupyter Notebook from the project root:
+    jupyter notebook
 
 Open EDA.ipynb and run all cells (Kernel → Restart & Run All)
 
-This notebook explores variable distributions, time series trends, 
-seasonality, and relationships between variables.
+This notebook explores the analysis-ready dataset prior to regression.
+It covers:
+- Variable distributions- checking for skew, outliers, and data gaps
+- Time series trends- visualising petrol prices and patronage over 2022–2025
+- Seasonality- identifying recurring monthly patterns in ridership
+  that will need to be controlled for in the regression
+- Variable relationships- inspecting the raw correlation between
+  petrol prices and patronage across transport modes
 
 
 -7 Analysis
@@ -179,9 +188,7 @@ To run the analysis:
 1. Ensure you have completed the data cleaning pipeline (steps 1-5 above)
 2. Install additional required packages:
    pip install statsmodels jupyter
-3. Launch Jupyter Notebook:
-   jupyter notebook
-4. Open analysis.ipynb and run all cells (Kernel → Restart & Run All)
+3. In the same JUpyter session open analysis.ipynb and run all cells (Kernel → Restart & Run All)
 
 The notebook reads from:
    data/clean/merged_final.csv
