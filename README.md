@@ -196,4 +196,33 @@ The notebook reads from:
 And saves regression outputs to:
    output/regression_table.csv
 
+-8 Robustness Analysis
 
+The robustness analysis file is:
+    robustness.ipynb
+
+Install any remaining required packages (if not already installed):
+    pip install statsmodels
+
+In the same Jupyter session, open robustness.ipynb and run all cells
+(Kernel → Restart & Run All).
+
+This notebook runs end-to-end on the cleaned data and includes:
+- Restatement of main result and descriptive declaration
+- Standard error justification (HC3 throughout)
+- Four robustness checks:
+    1. Alternative control sets (minimal, controls only, full)
+    2. Alternative sample (drop 2022, restrict to 2023–2025)
+    3. Alternative functional form (levels vs log)
+    4. Influential observations (Cook's distance, threshold 4/N)
+- Robustness table presenting all checks side-by-side
+- Interpretation of each check and overall assessment
+
+The notebook reads from:
+    data/clean/merged_final.csv
+
+And saves the robustness table to:
+    output/robustness_table.csv
+
+Note: ensure the data cleaning pipeline (steps 1–5) and primary
+analysis (steps 6–7) have been completed before running this notebook.
