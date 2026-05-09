@@ -55,8 +55,8 @@ Getting Started
 You may use venv, conda, or any environment tool.
 
 -2 Install required packages.
-This project only requires pandas:
-pip install pandas
+This project requires the following packages:
+    pip install pandas statsmodels jupyter
 
 Clone or download the repository
 git clone <https://github.com/ribhhutcheson/ecc3479-project.git>
