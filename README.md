@@ -151,8 +151,6 @@ data/clean/merged_final.csv
 data/clean/codebook/codebook.md
 
 -6 Run the EDA
-If you do not already have Jupyter installed, run:
-    pip install jupyter
 
 Launch Jupyter Notebook from the project root:
     jupyter notebook
@@ -187,9 +185,7 @@ This notebook runs end-to-end on the cleaned data and includes:
 
 To run the analysis:
 1. Ensure you have completed the data cleaning pipeline (steps 1-5 above)
-2. Install additional required packages:
-   pip install statsmodels jupyter
-3. In the same JUpyter session open analysis.ipynb and run all cells (Kernel → Restart & Run All)
+2. In the same JUpyter session open analysis.ipynb and run all cells (Kernel → Restart & Run All)
 
 The notebook reads from:
    data/clean/merged_final.csv
@@ -201,9 +197,6 @@ And saves regression outputs to:
 
 The robustness analysis file is:
     robustness.ipynb
-
-Install any remaining required packages (if not already installed):
-    pip install statsmodels
 
 In the same Jupyter session, open robustness.ipynb and run all cells
 (Kernel → Restart & Run All).
