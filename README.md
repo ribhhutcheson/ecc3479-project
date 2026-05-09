@@ -33,11 +33,12 @@ ECC3479-PROJECT/
 │
 ├── output/
 │    └── regression_table.csv
-│
+│    └── robustness_table.csv
 │  
 ├── analysis.ipynb
 │
 ├── EDA.ipynb
+├── robustness.ipynb
 └── README.md
 
 Folder meanings
