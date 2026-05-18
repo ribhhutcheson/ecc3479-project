@@ -9,7 +9,8 @@ Repository Structure
 ECC3479-PROJECT/
 │
 ├── code/
-│   └── clean_data.py
+│   ├── clean_data.py
+│   └── tables_figures.ipynb
 │
 ├── data/
 │   ├── raw/
@@ -32,9 +33,16 @@ ECC3479-PROJECT/
 ├── README.data
 │
 ├── output/
-│    └── regression_table.csv
-│    └── robustness_table.csv
-│  
+│    ├── figure1_timeseries.png
+│    ├── figure2_coefplot.png
+│    ├── main_results_table.csv
+│    ├── regression_table.csv
+│    ├── robustness_table.csv
+│    ├── table1_summary.pdf
+│    ├── table1_summary.png
+│    ├── table2_main_results.png
+│    └── table3_robustness.png
+│ 
 ├── analysis.ipynb
 │
 ├── EDA.ipynb
@@ -220,3 +228,30 @@ And saves the robustness table to:
 
 Note: ensure the data cleaning pipeline (steps 1–5) and primary
 analysis (steps 6–7) have been completed before running this notebook.
+
+-9 Report Replication Package
+
+The following tables and figures appear in the PDF report. 
+Each can be reproduced by running the scripts below in order.
+
+Full Pipeline (run in order)
+1. `python code/clean_data.py` — produces all cleaned datasets in data/clean/
+2. `analysis.ipynb` — produces main regression results
+3. `robustness.ipynb` — produces robustness checks
+4. `code/tables_figures.ipynb` — produces all tables and figures for the report
+
+Table and Figure Mapping
+
+| Output | File | Produced by |
+|--------|------|-------------|
+| Table 1: Summary Statistics | output/table1_summary_stats.png | code/tables_figures.ipynb |
+| Table 2: Main Results | output/table2_main_results.png | code/tables_figures.ipynb |
+| Table 3: Robustness Checks | output/table3_robustness.png | code/tables_figures.ipynb |
+| Figure 1: Time Series Plot | output/figure1_timeseries.png | code/tables_figures.ipynb |
+| Figure 2: Coefficient Plot | output/figure2_coefplot.png | code/tables_figures.ipynb |
+
+Notes
+- All scripts assume they are run from the project root directory
+- data/clean/merged_final.csv must exist before running any notebooks
+- Python 3.9 or later required
+- Required packages: pandas, statsmodels, numpy, matplotlib, jupyter
